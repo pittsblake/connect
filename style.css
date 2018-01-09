@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+
+#game {
+    background-color: blue;
+    display: inline-block;
+    /* height: 250px; */
+}
+
+.col{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+}
