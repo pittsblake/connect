@@ -88,6 +88,8 @@ class Game {
                 is.player = 'red'
                 findLastEmptyCell(col)
             }
+
+            is.onPlayerMove();
             $(this).trigger('mouseenter')
         });
     }
@@ -149,5 +151,6 @@ class Game {
 
     restart() {
         this.createGrid();
+        this.onPlayerMove();
     }
 }
