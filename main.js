@@ -3,5 +3,11 @@ $(document).ready(function() {
 
     const game = new Game('#game')
 
-    
+    game.onPlayerMove = function(){
+        $('#player').text(game.player)
+    }
+
+    $('#restart').click(function(){
+        game.restart();
+    })
 })
